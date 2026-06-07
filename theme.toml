@@ -4,11 +4,11 @@
 name = "hugo-theme-tailwindcss-starter"
 license = "MIT"
 licenselink = "https://github.com/taocode/hugo-theme-tailwindcss-starter/blob/main/LICENSE"
-description = "A boilerplate starter theme using Tailwind CSS."
+description = "A Hugo starter theme using Tailwind CSS 4, Skeleton UI, and Hugo's css.TailwindCSS pipe."
 homepage = "https://github.com/taocode/hugo-theme-tailwindcss-starter"
-tags = ["Hugo", "Tailwind CSS", "theme", "starter", "boilerplate"]
+tags = ["Hugo", "Tailwind CSS", "Skeleton", "theme", "starter", "boilerplate"]
 features = []
-min_version = "0.69"
+min_version = "0.161.0"
 
 [author]
   name = "Mark Jones"

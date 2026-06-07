@@ -7,6 +7,6 @@ keywords: [about, creator]
 type: about
 ---
 
-Hugo Starter Theme for WindiCSS.
+Hugo starter theme with Tailwind CSS 4 and Skeleton UI.
 
 Made by [taocode](https://github.com/taocode/).

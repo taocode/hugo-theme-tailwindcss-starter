@@ -1,0 +1,14 @@
+{{/* Processed by Hugo css.TailwindCSS — see https://gohugo.io/functions/css/tailwindcss/ */}}
+{{- $input := resources.Get "css/tailwind.input.css" -}}
+{{- $tailwindOpts := dict "minify" (not hugo.IsServer) "skipInlineImportsNotFound" true -}}
+{{- $tailwind := $input | css.TailwindCSS $tailwindOpts -}}
+{{- $vars := resources.Get "css/vars.css" -}}
+{{- $siteCSS := resources.Get "css/site.css" -}}
+{{- if hugo.IsServer -}}
+<link rel="stylesheet" href="{{ $vars.RelPermalink }}">
+<link rel="stylesheet" href="{{ $tailwind.RelPermalink }}">
+<link rel="stylesheet" href="{{ $siteCSS.RelPermalink }}">
+{{- else -}}
+  {{- $styles := slice $vars $tailwind $siteCSS | resources.Concat "css/styles.css" | minify | fingerprint | resources.PostProcess -}}
+<link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}">
+{{- end -}}

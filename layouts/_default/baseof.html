@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang='{{ .Site.Language.Locale }}' class="dark">
+<html lang='{{ .Site.Language.Locale }}' data-theme="cerberus" class="dark">
     {{ partial "head.html" . }}
-    <body class="flex flex-col min-h-screen bg-bg text-fg">
+    <body class="flex flex-col min-h-screen bg-surface-50-950 text-surface-950-50">
         {{- partial "dev-size-indicator.html" . -}}
         {{- partial "header.html" . -}}
         <main class="flex-1 prose mx-3 sm:prose-xl md:prose-2xl md:mx-auto md:px-4 mt-9">

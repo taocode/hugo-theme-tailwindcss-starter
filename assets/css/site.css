@@ -1,6 +1,6 @@
 /* Selection color */
 ::selection {
-  background-color: var(--c-brand-highlight);
+  background-color: color-mix(in oklab, var(--color-primary-500) 35%, transparent);
 }
 
 /* menu toggle  */
