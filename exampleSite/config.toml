@@ -1,0 +1,24 @@
+theme = "hugo-theme-windicss-starter"
+languageCode = "en-us"
+baseurl = "https://example.com/"
+title = "Hugo WindiCSS Starter"
+
+author = "Mark Jones"
+copyright = "Copyright © 2021, Mark Jones, all rights reserved."
+
+[params]
+    name = "Hugo WindiCSS Starter"
+    description = "A simple bootstraped theme for Hugo, build with WindiCSS."
+
+    github_user = "taocode"
+    github_repo = "https://github.com/taocode/hugo-theme-windicss-starter"
+    github_banner = true
+
+    favicon = "favicon.ico"
+
+# syntax highlight settings
+[markup]
+  [markup.highlight]
+    style = "dracula"
+  [markup.goldmark.renderer]
+    unsafe = true
