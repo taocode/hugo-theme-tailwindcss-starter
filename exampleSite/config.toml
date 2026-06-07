@@ -1,5 +1,5 @@
 theme = "hugo-theme-windicss-starter"
-languageCode = "en-us"
+locale = "en-us"
 baseurl = "https://example.com/"
 title = "Hugo WindiCSS Starter"
 
