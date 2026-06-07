@@ -21,7 +21,7 @@
     {{- $vars := resources.Get "css/vars.css" -}}
     {{- $siteCSS := resources.Get "css/site.css" -}}
     {{- $siteJS := resources.Get "js/site.js" -}}
-    {{- if .Site.IsServer }}
+    {{- if hugo.IsServer }}
     <link rel="stylesheet" href="{{ $vars.RelPermalink }}">
     <link rel="stylesheet" href="{{ $tailwind.RelPermalink }}">
     <link rel="stylesheet" href="{{ $siteCSS.RelPermalink }}">
