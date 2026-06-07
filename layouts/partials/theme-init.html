@@ -1,0 +1,11 @@
+<script>
+(function () {
+  var stored = localStorage.getItem('theme-mode');
+  var isDark = stored !== null
+    ? stored !== 'light'
+    : !window.matchMedia('(prefers-color-scheme: light)').matches;
+  var root = document.documentElement;
+  root.classList.toggle('dark', isDark);
+  root.style.colorScheme = isDark ? 'dark' : 'light';
+})();
+</script>
